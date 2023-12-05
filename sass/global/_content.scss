@@ -11,17 +11,27 @@ main{
 
 //THIS IS FOR THE HEADER
 header{
-    padding: 20px 80px;
+    padding: 15px 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    .logo{
+        img{
+            width: 8rem;
+        }
+    }
 
     .header-items{
         ul{
             display: flex;
             flex-direction: row;
             gap: 20px;
+
+            a{
+                color: var(--white);
+            }
         }
     }
 }
@@ -36,6 +46,28 @@ header{
     justify-content: center;
     
     button{
+        color: var(--white);
         @include button-properties;
+    }
+}
+
+//FOR THE FOOTER OF SALAMA CONTROL
+footer{
+    color: var(--white);
+    padding: 20px 80px;
+    background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
+    
+    h4{
+        margin-bottom: 25px;
+    }
+    a{
+        color: var(--white);
+    }
+
+    .footer-content{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto auto auto;
+        gap: 150px;
     }
 }

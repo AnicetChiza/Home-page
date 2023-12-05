@@ -19,16 +19,22 @@ main {
 }
 
 header {
-  padding: 20px 80px;
+  padding: 15px 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+header .logo img {
+  width: 8rem;
+}
 header .header-items ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+header .header-items ul a {
+  color: var(--white);
 }
 
 .cover-page-content {
@@ -40,6 +46,7 @@ header .header-items ul {
   justify-content: center;
 }
 .cover-page-content button {
+  color: var(--white);
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
@@ -47,6 +54,24 @@ header .header-items ul {
   background: none;
   font-family: "Montserrat", sans-serif;
   border: 2px solid var(--white);
+}
+
+footer {
+  color: var(--white);
+  padding: 20px 80px;
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
+}
+footer h4 {
+  margin-bottom: 25px;
+}
+footer a {
+  color: var(--white);
+}
+footer .footer-content {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  gap: 150px;
 }
 
 body {
@@ -150,20 +175,21 @@ body {
 
 /*--------------------------*/
 /*--------------------------*/
-.suggestion {
+.suggestion .suggestion-content {
   width: 80%;
   margin: auto;
-  padding: 20px 80px;
+  margin-top: 10px;
   text-align: center;
+  padding: 20px 40px;
 }
-.suggestion .suggestion-content div h2 {
+.suggestion .suggestion-content .suggestion-title h2 {
   margin-bottom: 10px;
   color: var(--bluish-green);
 }
-.suggestion .suggestion-content div div {
+.suggestion .suggestion-content .suggestion-title .suggestion-number {
   margin-top: 20px;
 }
-.suggestion .suggestion-content div div a {
+.suggestion .suggestion-content .suggestion-title .suggestion-number .call-number {
   color: var(--white);
   text-decoration: none;
   padding: 8px 15px;
@@ -177,6 +203,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 

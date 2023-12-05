@@ -106,19 +106,19 @@ body{
   //FOR SUGGESTIONS PART
 /*--------------------------*/
 .suggestion{
-    width: 80%;
-    margin: auto;
-    padding: 20px 80px;
-    text-align: center;
-
     .suggestion-content{
-        div{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+        padding: 20px 40px;
+        .suggestion-title{
             h2{
                 @include title-properties;
             }
-            div{
+            .suggestion-number{
                 margin-top: 20px;
-                a{
+                .call-number{
                     color: var(--white);
                     text-decoration: none;
                     padding: 8px 15px;
