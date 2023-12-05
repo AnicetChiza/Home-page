@@ -83,19 +83,6 @@ footer {
   color: var(--white);
   padding: 20px 80px;
   background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
-  /*.top{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      cursor: pointer;
-      margin-top: -25px;
-      i{
-          color: var(--white);
-          padding: 13px 15px;
-          border-radius: 100%;
-          background-color: var(--background);
-      }
-  }*/
 }
 footer h4 {
   margin-bottom: 25px;
@@ -123,6 +110,19 @@ footer .copyright {
   font-size: 14px;
   color: var(--background);
   text-align: center;
+}
+footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: -25px;
+}
+footer .top i {
+  color: var(--white);
+  padding: 13px 15px;
+  border-radius: 100%;
+  background-color: var(--background);
 }
 
 body {
