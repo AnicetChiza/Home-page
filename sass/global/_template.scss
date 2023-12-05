@@ -8,3 +8,27 @@ body{
     font-family: u.$font-Monserat;
     background-color: var(--background);
 }
+
+//FOR THE 'A PROPOS' OF SALAMA CONTROL
+.apropos{
+    padding: 20px 80px;
+    h4{
+        @include title-properties;
+    }
+    h5{
+        @include title-h5;
+    }
+
+    .apropos-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 150px;
+
+        i{
+            font-size: 30px;
+            font-style: italic;
+            color: var(--bluish-green);
+        }
+    }
+}

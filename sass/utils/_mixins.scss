@@ -1,0 +1,10 @@
+@mixin title-properties{
+    margin-bottom: 10px;
+    color: var(--bluish-green);
+}
+
+@mixin title-h5{
+    width: 100px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid var(--shade-yellow);
+}

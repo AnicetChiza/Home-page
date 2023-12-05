@@ -57,6 +57,30 @@ body {
   background-color: var(--background);
 }
 
+.apropos {
+  padding: 20px 80px;
+}
+.apropos h4 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.apropos h5 {
+  width: 100px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid var(--shade-yellow);
+}
+.apropos .apropos-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+}
+.apropos .apropos-items i {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--bluish-green);
+}
+
 *,
 ::after, ::before {
   margin: 0;
