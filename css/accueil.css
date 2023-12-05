@@ -45,7 +45,6 @@ header .header-items ul {
   border-radius: 5px;
   font-weight: 600;
   background: none;
-  color: var(--white);
   font-family: "Montserrat", sans-serif;
   border: 2px solid var(--white);
 }
@@ -60,7 +59,7 @@ body {
 .apropos {
   padding: 20px 80px;
 }
-.apropos h4 {
+.apropos h3 {
   margin-bottom: 10px;
   color: var(--bluish-green);
 }
@@ -86,7 +85,7 @@ body {
 .fonctionnalite-salama {
   padding: 20px 80px;
 }
-.fonctionnalite-salama h4 {
+.fonctionnalite-salama h3 {
   margin-bottom: 10px;
   color: var(--bluish-green);
 }
@@ -106,6 +105,73 @@ body {
   box-shadow: 0px 0px 180px 0px var(--black);
 }
 
+/*--------------------------*/
+/*--------------------------*/
+.advantages-salama {
+  padding: 20px 80px;
+  text-align: center;
+}
+.advantages-salama h2 {
+  color: var(--bluish-green);
+}
+.advantages-salama .advantages-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.advantages-salama .advantages-content div h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.advantages-salama .advantages-content div i {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 100%;
+  color: var(--bluish-green);
+  background-color: var(--shade-yellow);
+}
+
+/*--------------------------*/
+/*--------------------------*/
+.contactez-nous {
+  padding: 20px 80px;
+}
+.contactez-nous h3 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.contactez-nous h5 {
+  width: 100px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid var(--shade-yellow);
+}
+
+/*--------------------------*/
+/*--------------------------*/
+.suggestion {
+  width: 80%;
+  margin: auto;
+  padding: 20px 80px;
+  text-align: center;
+}
+.suggestion .suggestion-content div h2 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.suggestion .suggestion-content div div {
+  margin-top: 20px;
+}
+.suggestion .suggestion-content div div a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: bolder;
+  border-radius: 5px;
+  background: linear-gradient(45deg, var(--bluish-green), var(--shade-yellow));
+}
+
 *,
 ::after, ::before {
   margin: 0;
@@ -117,4 +183,61 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+}
+
+form .formulaire {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10px;
+  -webkit-column-gap: 15px;
+}
+form .formulaire div {
+  width: 100%;
+  display: grid;
+}
+form .formulaire div label {
+  font-weight: bolder;
+}
+form .formulaire div input {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 80px 0px var(--black);
+  font-family: "Montserrat", sans-serif;
+}
+form .textarea {
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-column-gap: 10px;
+}
+form .textarea input, form .textarea textarea {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 80px 0px var(--black);
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  box-shadow: 0px 0px 150px 10px var(--black);
+}
+form button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid var(--white);
+  width: 200px;
+  border: none;
+  color: var(--white);
+  margin-top: 15px;
+  background: linear-gradient(45deg, var(--bluish-green), var(--shade-yellow));
 }/*# sourceMappingURL=accueil.css.map */
