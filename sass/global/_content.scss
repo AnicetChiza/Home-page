@@ -5,6 +5,8 @@
 main{
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 1;
     color: var(--white);
     background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
 }
@@ -44,7 +46,19 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 15rem;
+            border-radius: 10px;
+        }
+        .second-image{
+            margin-top: -120px;
+            margin-left: 50px;
+        }
+    }
     button{
         color: var(--white);
         @include button-properties;
@@ -69,5 +83,38 @@ footer{
         justify-content: space-between;
         grid-template-columns: auto auto auto auto;
         gap: 150px;
+    }
+
+    .medias-sociaux{
+        a{
+            color: var(--white);
+        }
+        i{
+            border-radius: 50%;
+            padding: 10px;
+            color: var(--white);
+            background-color: var(--background);
+        }
+    }
+
+    .copyright{
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--background);
+        text-align: center;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-top: -25px;
+        i{
+            color: var(--white);
+            padding: 13px 15px;
+            border-radius: 100%;
+            background-color: var(--background);
+        }
     }
 }

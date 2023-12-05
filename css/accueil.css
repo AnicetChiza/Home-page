@@ -6,7 +6,7 @@
   --pink: #ffc2b4;
   --white: #fff;
   --black: #0000009f;
-  --background: #ffffffe3;
+  --background: rgba(255, 255, 255, 0.233);
   --neutral-shade: #f8f8ed;
   --red-opaque:#fd65652a;
 }
@@ -14,6 +14,8 @@
 main {
   width: 100%;
   height: 100vh;
+  position: relative;
+  z-index: 1;
   color: var(--white);
   background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
 }
@@ -45,6 +47,19 @@ header .header-items ul a {
   flex-direction: column;
   justify-content: center;
 }
+.cover-page-content .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cover-page-content .content img {
+  width: 15rem;
+  border-radius: 10px;
+}
+.cover-page-content .content .second-image {
+  margin-top: -120px;
+  margin-left: 50px;
+}
 .cover-page-content button {
   color: var(--white);
   cursor: pointer;
@@ -73,6 +88,34 @@ footer .footer-content {
   grid-template-columns: auto auto auto auto;
   gap: 150px;
 }
+footer .medias-sociaux a {
+  color: var(--white);
+}
+footer .medias-sociaux i {
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--white);
+  background-color: var(--background);
+}
+footer .copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--background);
+  text-align: center;
+}
+footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: -25px;
+}
+footer .top i {
+  color: var(--white);
+  padding: 13px 15px;
+  border-radius: 100%;
+  background-color: var(--background);
+}
 
 body {
   width: 100%;
@@ -83,6 +126,7 @@ body {
 
 .apropos {
   padding: 20px 80px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
 }
 .apropos h3 {
   margin-bottom: 10px;
@@ -195,7 +239,7 @@ body {
   padding: 8px 15px;
   font-weight: bolder;
   border-radius: 5px;
-  background: linear-gradient(45deg, var(--bluish-green), var(--shade-yellow));
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
 }
 
 *,
@@ -266,5 +310,5 @@ form button {
   border: none;
   color: var(--white);
   margin-top: 15px;
-  background: linear-gradient(45deg, var(--bluish-green), var(--shade-yellow));
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
 }/*# sourceMappingURL=accueil.css.map */
