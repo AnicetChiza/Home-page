@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Maven+Pro&family=Montserrat&family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="javascript/app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -15,20 +17,23 @@
     <!--This is for the cover page and it contains the header and the presentation part which has the login button-->
     <main>
         <header>
-            <div class="logo">
-                <p><img src="images/logo_salama_control.png" alt="Logo salama control"></p>
-            </div>
-            <div class="header-items">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="#fonctionnalite">Fonctionnalité</a></li>
-                    <li><a href="#avantage">Avantages</a></li>
-                    <li><a href="#contact">Contact us</a></li>
-                </ul>
+            <div class="header">
+                <div class="logo">
+                    <p><img src="images/logo_salama_control.png" alt="Logo salama control"></p>
+                </div>
+                <div class="header-items">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#apropos">A propos</a></li>
+                        <li><a href="#fonctionnalite">Fonctionnalité</a></li>
+                        <li><a href="#avantage">Avantages</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
 
+        
         <div id="accueil" class="cover-page-content">
             <div class="content">
                 <div class="items">
@@ -45,120 +50,124 @@
 
         <div></div>
     </main>
+
+    <section>
+        <div id="apropos" class="apropos">
+            <h3>Qu'est-ce Salama Control?</h3>
+            <h5></h5>
+            <div class="apropos-items">
+                <div>
+                    <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eum ducimus pariatur, beatae sit tempore accusamus, cumque officia rem harum animi natus. Sapiente, laudantium autem quas laboriosam repellat rem odit architecto quod aliquam sint recusandae. Accusantium fuga autem dignissimos. Quia!</p>
+                </div>
+                <div>
+                    <p><img src="images/police.avif" alt="police routière"></p>
+                </div>
+            </div>
+        </div>
     
-    <div id="apropos" class="apropos">
-        <h3>Qu'est-ce Salama Control?</h3>
-        <h5></h5>
-        <div class="apropos-items">
-            <div>
-                <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eum ducimus pariatur, beatae sit tempore accusamus, cumque officia rem harum animi natus. Sapiente, laudantium autem quas laboriosam repellat rem odit architecto quod aliquam sint recusandae. Accusantium fuga autem dignissimos. Quia!</p>
-            </div>
-            <div>
-                <p><img src="images/police.avif" alt="police routière"></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="fonctionnalite" class="fonctionnalite-salama">
-        <h3>Fonctionnalités</h3>
-        <h5></h5>
-        <div class="fonctionnalite-content">
-            <div>
-                <h4>01.</h4>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, natus.</p>
-            </div>
-            <div>
-                <h4>02.</h4>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, adipisci!</p>
-            </div>
-            <div>
-                <h4>03.</h4>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ullam?</p>
-            </div>
-            <div>
-                <h4>04.</h4>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, mollitia!</p>
+        <div id="fonctionnalite" class="fonctionnalite-salama">
+            <h3>Fonctionnalités</h3>
+            <h5></h5>
+            <div class="fonctionnalite-content">
+                <div>
+                    <h4>01.</h4>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, natus.</p>
+                </div>
+                <div>
+                    <h4>02.</h4>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, adipisci!</p>
+                </div>
+                <div>
+                    <h4>03.</h4>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ullam?</p>
+                </div>
+                <div>
+                    <h4>04.</h4>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, mollitia!</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div id="avantage" class="advantages-salama">
-        <h2>Gagner le temps en utilisant Salama Control</h2>
+    
+        <div id="avantage" class="advantages-salama">
+            <h2>Gagner le temps en utilisant Salama Control</h2>
+            
+            <div class="advantages-content">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
         
-        <div class="advantages-content">
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
+        </div>
     
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div id="contact" class="contactez-nous">
+            <h3>Contactez-nous</h3>
+            <h5></h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, a.</p>
+            <form action="">
+                <div class="formulaire">
+                    <div>
+                        <label for="names">Noms</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="textarea">
+                    <input type="text" placeholder="Sujet">
+                    <textarea name="message" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button>Envoyer</button>
+            </form>
+        </div>
+        <div class="suggestion">
+            <div class="suggestion-content">
+                <div class="suggestion-title">
+                    <h2>Suggestions</h2>
+                    <h5></h5>
+                <div class="suggestion-paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio nam at explicabo! Repellat recusandae natus sapiente pariatur dignissimos id!</p>
+                </div>
+                <div class="suggestion-number">
+                    <a class="call-number" href="#">+243 976 752 609</a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div id="contact" class="contactez-nous">
-        <h3>Contactez-nous</h3>
-        <h5></h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, a.</p>
-        <form action="">
-            <div class="formulaire">
-                <div>
-                    <label for="names">Noms</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email">
-                </div>
-            </div>
-            <div class="textarea">
-                <input type="text" placeholder="Sujet">
-                <textarea name="message" id="" cols="30" rows="4" placeholder="Message"></textarea>
-            </div>
-            <button>Envoyer</button>
-        </form>
-    </div>
-    <div class="suggestion">
-        <div class="suggestion-content">
-            <div class="suggestion-title">
-                <h2>Suggestions</h2>
-                <h5></h5>
-            <div class="suggestion-paragraph">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio nam at explicabo! Repellat recusandae natus sapiente pariatur dignissimos id!</p>
-            </div>
-            <div class="suggestion-number">
-                <a class="call-number" href="#">+243 976 752 609</a>
-            </div>
-        </div>
-    </div>
+    </section>
+    
+    
 
     <footer>
         <div class="footer-content">
@@ -207,6 +216,6 @@
         </div>
     </footer>
 
-    <script src="javascript/app.js"></script>
+    
 </body>
 </html>
