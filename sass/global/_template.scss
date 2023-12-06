@@ -25,12 +25,16 @@ section{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 150px;
+        gap: 30px;
 
         i{
             font-size: 30px;
             font-style: italic;
             color: var(--bluish-green);
+        }
+
+        img{
+            width: 35rem;
         }
     }
 }
@@ -38,6 +42,7 @@ section{
 //FOR THE FONCTIONNALITY PART
 /*--------------------------*/
 .fonctionnalite-salama{
+    margin-top: 20px;
     padding: 20px 80px;
     h3{
         @include title-properties;
@@ -53,7 +58,7 @@ section{
         div{
             margin-top: 10px;
             padding: 15px 20px;
-            box-shadow: 0px 0px 180px 0px var(--black);
+            box-shadow: 0px 0px 20px 0px rgb(231, 231, 231);
         }
     }
 }
@@ -62,9 +67,13 @@ section{
   //FOR THE ADVANTAGES PART
 /*--------------------------*/
 .advantages-salama{
+    margin-top: 20px;
+
     padding: 20px 80px;
     text-align: center;
     h2{
+        margin-top: 10px;
+
         color: var(--bluish-green);
     }
 
@@ -128,6 +137,31 @@ section{
                     border-radius: 5px;
                     background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
                 }
+            }
+        }
+    }
+}
+
+/*************************************/
+//FOR SALAMA APP//
+.salama-app{
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 100px 1px var(--black);
+
+    .salama-applications{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        div{
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #494949;
+            a{
+                color: var(--white);
             }
         }
     }
