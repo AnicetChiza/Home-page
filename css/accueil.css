@@ -102,6 +102,9 @@ footer .footer-content {
   grid-template-columns: auto auto auto auto;
   gap: 150px;
 }
+footer .medias-sociaux {
+  margin-top: 20px;
+}
 footer .medias-sociaux a {
   color: var(--white);
 }
@@ -256,7 +259,7 @@ section {
   color: var(--white);
   padding: 10px 20px;
   border-radius: 5px;
-  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
+  background: rgba(1, 35, 7, 0.8);
 }
 .salama-app .salama-applications div a {
   color: var(--white);
@@ -329,5 +332,5 @@ form button {
   border: none;
   color: var(--white);
   margin-top: 15px;
-  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
+  background: rgba(1, 35, 7, 0.8);
 }/*# sourceMappingURL=accueil.css.map */
