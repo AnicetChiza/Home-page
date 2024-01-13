@@ -90,7 +90,6 @@ header{
 //FOR THE CONTENT OF THE COVER PAGE
 .cover-page-content{
     padding: 20px 80px;
-    line-height: 40px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -100,6 +99,11 @@ header{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        p{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
         img{
             width: 15rem;
             border-radius: 10px;

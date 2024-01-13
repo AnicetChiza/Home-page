@@ -88,7 +88,6 @@ header .header-color {
 
 .cover-page-content {
   padding: 20px 80px;
-  line-height: 40px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -99,6 +98,10 @@ header .header-color {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.cover-page-content .content p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .cover-page-content .content img {
   width: 15rem;
@@ -399,10 +402,8 @@ form button {
   header .header .menu .menu-mobile {
     margin-top: 0;
   }
-  .cover-page-content .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: initial;
+  .cover-page-content .content .images {
+    display: none;
   }
   .apropos .apropos-items {
     display: flex;
@@ -416,6 +417,7 @@ form button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
     -webkit-column-gap: 20px;
     justify-content: initial;
   }
@@ -435,10 +437,38 @@ form button {
   }
 }
 @media screen and (max-width: 768px) and (max-width: 600px) {
+  .apropos .apropos-items img {
+    width: 100%;
+  }
   form .formulaire {
     display: flex;
     flex-direction: column;
     gap: 8px;
     -webkit-column-gap: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+  header .header {
+    padding: 6px 25px;
+  }
+  .apropos, .fonctionnalite-salama, .advantages-salama,
+  .cover-page-content, .contactez-nous, footer {
+    padding: 20px 20px;
+  }
+  .salama-app .salama-applications {
+    display: flex;
+    flex-direction: column;
+  }
+  .salama-app .salama-applications div {
+    width: 100%;
   }
 }/*# sourceMappingURL=accueil.css.map */
