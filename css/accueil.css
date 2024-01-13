@@ -399,6 +399,11 @@ form button {
   header .header .menu .menu-mobile {
     margin-top: 0;
   }
+  .cover-page-content .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+  }
   .apropos .apropos-items {
     display: flex;
     flex-direction: column;
@@ -421,8 +426,19 @@ form button {
   }
 }
 @media (max-width: 768px) {
-  .apropos, .fonctionnalite-salama,
-  .advantages-salama, .contactez-nous {
+  header .header {
+    padding: 6px 25px;
+  }
+  .apropos, .fonctionnalite-salama, .advantages-salama,
+  .cover-page-content, .contactez-nous, footer {
     padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  form .formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    -webkit-column-gap: 8px;
   }
 }/*# sourceMappingURL=accueil.css.map */

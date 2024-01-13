@@ -30,6 +30,14 @@
         }
     }
 
+    .cover-page-content{
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+        }
+    }
+
     .apropos{
         .apropos-items{
             display: flex;
@@ -62,8 +70,24 @@
 }
 
 @include u.breakpoint(tablet){
-    .apropos, .fonctionnalite-salama,
-    .advantages-salama, .contactez-nous{
+    header{
+        .header{
+            padding: 6px 25px;
+        }
+    }
+    .apropos, .fonctionnalite-salama, .advantages-salama, 
+    .cover-page-content, .contactez-nous, footer{
         padding: 20px 40px;
+    }
+
+    @media screen and (max-width: 600px){
+        form{
+            .formulaire{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                -webkit-column-gap: 8px;
+            }
+        }
     }
 }
