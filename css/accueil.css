@@ -59,7 +59,7 @@ header .header .menu .menu-container ul li {
   color: var(--bluish-green);
   text-align: center;
   padding: 15px;
-  box-shadow: 0px 0px 3px 0.5px rgba(1, 35, 7, 0.8);
+  box-shadow: 0px 0px 1.5px 0.5px rgba(1, 35, 7, 0.8);
 }
 header .header .menu .menu-container ul li a {
   color: rgba(1, 35, 7, 0.8);
