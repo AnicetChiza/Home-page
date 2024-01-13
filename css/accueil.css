@@ -27,16 +27,17 @@ header .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3px 60px;
+  padding: 6px 60px;
   justify-content: space-between;
 }
 header .header .menu {
   display: none;
 }
 header .header .menu .menu-icons {
+  width: 50px;
+  text-align: center;
+  padding: 10px 10px;
   color: var(--bluish-green);
-  padding: 8px 8px;
-  border-radius: 50%;
   background-color: var(--shade-yellow);
 }
 header .header .menu .menu-container {
@@ -46,7 +47,7 @@ header .header .menu .menu-container {
   width: 100%;
   transition: 1s;
   margin-top: -200%;
-  background-color: var(--bluish-green);
+  background-color: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
   display: flex;
   flex-direction: row;
 }
