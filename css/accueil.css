@@ -239,38 +239,13 @@ section {
   border-bottom: 4px solid var(--shade-yellow);
 }
 
-/*--------------------------*/
-/*--------------------------*/
-.suggestion .suggestion-content {
-  width: 80%;
-  margin: auto;
-  margin-top: 10px;
-  text-align: center;
-  padding: 20px 40px;
-}
-.suggestion .suggestion-content .suggestion-title h2 {
-  margin-bottom: 10px;
-  color: var(--bluish-green);
-}
-.suggestion .suggestion-content .suggestion-title .suggestion-number {
-  margin-top: 20px;
-}
-.suggestion .suggestion-content .suggestion-title .suggestion-number .call-number {
-  color: var(--white);
-  text-decoration: none;
-  padding: 8px 15px;
-  font-weight: bolder;
-  border-radius: 5px;
-  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
-}
-
 /*************************************/
 .salama-app {
   padding: 20px 80px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 0px 100px 1px var(--black);
 }
 .salama-app .salama-applications {
   display: flex;
@@ -281,7 +256,7 @@ section {
   color: var(--white);
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #494949;
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
 }
 .salama-app .salama-applications div a {
   color: var(--white);
@@ -322,7 +297,7 @@ form .formulaire div input {
   padding: 8px 12px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 80px 0px var(--black);
+  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
 }
 form .textarea {
@@ -338,11 +313,9 @@ form .textarea input, form .textarea textarea {
   padding: 8px 12px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 80px 0px var(--black);
+  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
   background: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
 }
 form button {
   cursor: pointer;
