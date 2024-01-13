@@ -447,6 +447,12 @@ form button {
     -webkit-column-gap: 8px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 530px) {
+  .fonctionnalite-salama .fonctionnalite-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 480px) {
   .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
     display: grid;

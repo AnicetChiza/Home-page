@@ -99,6 +99,15 @@
             }
         }
     }
+
+    @media screen and (max-width: 530px){
+        .fonctionnalite-salama{
+            .fonctionnalite-content{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
 
 @include u.breakpoint(mobile){
