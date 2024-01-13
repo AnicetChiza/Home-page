@@ -39,7 +39,7 @@ header{
                 width: 100%;
                 transition: 1s;
                 margin-top: -200%;
-                background-color: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
+                background-color: var(--white);
                 display: flex;
                 flex-direction: row;
                 ul{
@@ -51,8 +51,9 @@ header{
                         padding: 15px;
                         border-bottom: 1px solid var(--shade-yellow);
                         a{
-                            color: var(--white);
+                            color: rgba(1,35,7,0.8);
                             text-decoration: none;
+                            font-weight: bolder;
                             &:hover{
                                 color: var(--shade-yellow);
                             }

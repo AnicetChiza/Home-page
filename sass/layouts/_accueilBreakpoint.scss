@@ -44,6 +44,13 @@
         }
     }
 
+    .salama-app{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        -webkit-column-gap: 20px;
+        justify-content: initial;
+    }
 
     footer{
         .footer-content{
@@ -51,5 +58,12 @@
             grid-template-columns: auto auto;
             gap: 50px;
         }
+    }
+}
+
+@include u.breakpoint(tablet){
+    .apropos, .fonctionnalite-salama,
+    .advantages-salama, .contactez-nous{
+        padding: 20px 40px;
     }
 }
