@@ -220,11 +220,8 @@ section {
   color: var(--bluish-green);
 }
 .advantages-salama .advantages-content div i {
-  padding: 15px;
-  font-size: 20px;
+  padding: 18px 18px;
   border-radius: 100%;
-  color: var(--bluish-green);
-  background-color: var(--shade-yellow);
 }
 
 /*--------------------------*/
