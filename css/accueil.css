@@ -454,6 +454,9 @@ form button {
   }
 }
 @media (max-width: 480px) {
+  .cover-page-content .content .items {
+    text-align: center;
+  }
   .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
     display: grid;
     grid-template-columns: 1fr;

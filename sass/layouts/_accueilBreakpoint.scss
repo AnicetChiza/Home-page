@@ -111,6 +111,14 @@
 }
 
 @include u.breakpoint(mobile){
+    .cover-page-content{
+        .content{
+            .items{
+                text-align: center;
+            }
+        }
+    }
+    
     .fonctionnalite-salama, .advantages-salama{
         .fonctionnalite-content, .advantages-content{
             display: grid;
