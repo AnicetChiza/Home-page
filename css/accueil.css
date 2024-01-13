@@ -30,6 +30,43 @@ header .header {
   padding: 3px 60px;
   justify-content: space-between;
 }
+header .header .menu {
+  display: none;
+}
+header .header .menu .menu-icons {
+  color: var(--bluish-green);
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: var(--shade-yellow);
+}
+header .header .menu .menu-container {
+  position: absolute;
+  top: 70px;
+  right: 0.5px;
+  width: 100%;
+  transition: 1s;
+  margin-top: -200%;
+  background-color: var(--bluish-green);
+  display: flex;
+  flex-direction: row;
+}
+header .header .menu .menu-container ul {
+  width: 100%;
+}
+header .header .menu .menu-container ul li {
+  list-style: none;
+  color: var(--bluish-green);
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--shade-yellow);
+}
+header .header .menu .menu-container ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+header .header .menu .menu-container ul li a:hover {
+  color: var(--shade-yellow);
+}
 header .logo img {
   width: 8rem;
 }
@@ -337,11 +374,34 @@ form button {
 }
 
 @media (max-width: 978px) {
+  header .header .header-items {
+    display: none;
+  }
+  header .header .menu {
+    display: initial;
+  }
+  header .header .menu .menu-icons .icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .header .menu .menu-icons .exit {
+    display: none;
+    cursor: pointer;
+  }
+  header .header .menu .menu-mobile .icon {
+    display: none;
+  }
+  header .header .menu .menu-mobile .exit {
+    display: initial;
+  }
+  header .header .menu .menu-mobile {
+    margin-top: 0;
+  }
   .apropos .apropos-items {
     display: flex;
     flex-direction: column;
   }
-  .fonctionnalite-salama .fonctionnalite-content {
+  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

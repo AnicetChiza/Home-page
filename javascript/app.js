@@ -21,3 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//Pour notre Menu HAMBURGER
+const menu = document.querySelector('.menu-icons');
+const exit = document.querySelector('.menu-container');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('menu-mobile');
+    exit.classList.toggle('menu-mobile');
+})
+
+document.querySelectorAll('.nav-links').forEach(n => n.addEventListener('click', () =>{
+    menu.classList.remove('menu-mobile');
+    exit.classList.remove('menu-mobile');
+}))

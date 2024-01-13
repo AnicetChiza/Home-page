@@ -1,6 +1,35 @@
 @use '../utils/' as u;
 
 @include u.breakpoint(laptop){
+
+    header{
+        .header{
+            .header-items{
+                display: none;
+            }
+            .menu{
+                display: initial;
+                .menu-icons .icon{
+                    display: block;
+                    cursor: pointer;
+                }
+                .menu-icons .exit{
+                    display: none;
+                    cursor: pointer;
+                }
+                .menu-mobile .icon{
+                    display: none;
+                }
+                .menu-mobile .exit{
+                    display: initial;
+                }
+                .menu-mobile{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
     .apropos{
         .apropos-items{
             display: flex;
@@ -8,12 +37,13 @@
         }
     }
 
-    .fonctionnalite-salama{
-        .fonctionnalite-content{
+    .fonctionnalite-salama, .advantages-salama{
+        .fonctionnalite-content, .advantages-content{
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
     }
+
 
     footer{
         .footer-content{

@@ -20,6 +20,45 @@ header{
         align-items: center;
         padding: 3px 60px;
         justify-content: space-between;
+
+        //Ici nous avons traités notre MENU HAMBURGER
+        .menu{
+            display: none;
+            .menu-icons{
+                color: var(--bluish-green);
+                padding: 8px 8px;
+                border-radius: 50%;
+                background-color: var(--shade-yellow);
+            }
+            .menu-container{
+                position: absolute;
+                top: 70px;
+                right: 0.5px;
+                width: 100%;
+                transition: 1s;
+                margin-top: -200%;
+                background-color: var(--bluish-green);
+                display: flex;
+                flex-direction: row;
+                ul{
+                    width: 100%;
+                    li{
+                        list-style: none;
+                        color: var(--bluish-green);
+                        text-align: center;
+                        padding: 15px;
+                        border-bottom: 1px solid var(--shade-yellow);
+                        a{
+                            color: var(--white);
+                            text-decoration: none;
+                            &:hover{
+                                color: var(--shade-yellow);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .logo{
         img{
