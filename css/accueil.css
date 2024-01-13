@@ -195,6 +195,9 @@ section {
   gap: 10px;
   -webkit-column-gap: 10px;
 }
+.fonctionnalite-salama .fonctionnalite-content div {
+  padding: 15px 20px;
+}
 
 /*--------------------------*/
 /*--------------------------*/
@@ -331,4 +334,20 @@ form button {
   color: var(--white);
   margin-top: 15px;
   background: rgba(1, 35, 7, 0.8);
+}
+
+@media (max-width: 978px) {
+  .apropos .apropos-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnalite-salama .fonctionnalite-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
 }/*# sourceMappingURL=accueil.css.map */

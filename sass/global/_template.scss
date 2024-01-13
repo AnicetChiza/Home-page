@@ -56,6 +56,10 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
         -webkit-column-gap: 10px;
+        
+        div{
+            padding: 15px 20px;
+        }
     }
 }
 

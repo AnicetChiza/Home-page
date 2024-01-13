@@ -1,0 +1,25 @@
+@use '../utils/' as u;
+
+@include u.breakpoint(laptop){
+    .apropos{
+        .apropos-items{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .fonctionnalite-salama{
+        .fonctionnalite-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    footer{
+        .footer-content{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px;
+        }
+    }
+}
