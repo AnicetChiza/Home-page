@@ -37,6 +37,7 @@ header .header-items ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  -webkit-column-gap: 20px;
 }
 header .header-items ul a {
   color: var(--white);
@@ -101,6 +102,7 @@ footer .footer-content {
   justify-content: space-between;
   grid-template-columns: auto auto auto auto;
   gap: 150px;
+  -webkit-column-gap: 150px;
 }
 footer .medias-sociaux {
   margin-top: 20px;
@@ -161,6 +163,7 @@ section {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  -webkit-column-gap: 30px;
 }
 .apropos .apropos-items i {
   font-size: 30px;
@@ -190,11 +193,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-}
-.fonctionnalite-salama .fonctionnalite-content div {
-  margin-top: 10px;
-  padding: 15px 20px;
-  box-shadow: 0px 0px 20px 0px rgb(231, 231, 231);
+  -webkit-column-gap: 10px;
 }
 
 /*--------------------------*/
@@ -211,8 +210,9 @@ section {
 .advantages-salama .advantages-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
   margin-top: 20px;
+  gap: 20px;
+  -webkit-column-gap: 20px;
 }
 .advantages-salama .advantages-content div h4 {
   margin-top: 10px;
@@ -220,8 +220,8 @@ section {
   color: var(--bluish-green);
 }
 .advantages-salama .advantages-content div i {
-  padding: 18px 18px;
-  border-radius: 100%;
+  border-radius: 50%;
+  padding: 19px 20px;
 }
 
 /*--------------------------*/
@@ -251,6 +251,7 @@ section {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  -webkit-column-gap: 5px;
 }
 .salama-app .salama-applications div {
   color: var(--white);

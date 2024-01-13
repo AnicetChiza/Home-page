@@ -32,7 +32,7 @@ header{
             display: flex;
             flex-direction: row;
             gap: 20px;
-
+            -webkit-column-gap: 20px;
             a{
                 color: var(--white);
             }
@@ -97,6 +97,7 @@ footer{
         justify-content: space-between;
         grid-template-columns: auto auto auto auto;
         gap: 150px;
+        -webkit-column-gap: 150px;
     }
 
     .medias-sociaux{
